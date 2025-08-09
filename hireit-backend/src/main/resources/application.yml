@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    url: ${SPRING_DATASOURCE_URL:jdbc:postgresql://localhost:5432/hireit}
+    username: ${SPRING_DATASOURCE_USERNAME:hireit}
+    password: ${SPRING_DATASOURCE_PASSWORD:hireitpass}
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+server:
+  port: 8080
+
+app:
+  jwt:
+    secret: ${JWT_SECRET:change-me-change-me-change-me-change-me}
