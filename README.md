@@ -1,30 +1,6 @@
-# HireIT — Starter Full-Stack Project
+HireIT is a full-stack Java Spring Boot and React application that streamlines the job hiring process from posting to placement.
+On the backend, I built REST APIs with Spring Boot, Spring Data JPA, and a secure JWT-based authentication system to manage job listings, applicants, and recruiters. On the frontend, React delivers a responsive, user-friendly interface for browsing jobs, applying, and tracking applications.
 
-This is a starter full-stack project for **HireIT** (Jobs platform).
-It includes a Java Spring Boot backend, a React frontend (Vite), Docker Compose for local dev,
-and Terraform snippets for AWS. This is a minimal, runnable skeleton to help you build further.
+We use PostgreSQL as the database, containerized with Docker for easy deployment, and AWS S3 for resume uploads. Recruiters get real-time applicant data, filtering, and status updates, while candidates enjoy a clean, guided application flow.
 
-## Quick start (local)
-
-1. Ensure Docker & Docker Compose are installed.
-2. From this project root run:
-   ```
-   docker-compose up --build
-   ```
-3. Backend: http://localhost:8080
-4. Frontend: http://localhost:3000
-
-Default Postgres credentials (used in docker-compose):
-- DB: hireit
-- User: hireit
-- Password: hireitpass
-
-JWT secret used in backend: `change-me` (for dev only)
-
-## Contents
-- hireit-backend/: Spring Boot app (Maven)
-- hireit-frontend/: React (Vite)
-- docker-compose.yml
-- terraform/: basic Terraform snippets
-- .github/: CI workflow
-
+From a learning perspective, HireIT made me apply full-stack principles — designing APIs, securing them, integrating with cloud storage, and delivering an interactive UI. It’s production-ready, scalable, and demonstrates my ability to architect, implement, and deploy an end-to-end enterprise-style application
